@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Sullivan &amp; Alanis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Sullivan & Alanis: dupla de irmãos de Colombo, PR. Sertanejo universitário e agronejo, ao vivo com banda. Ouça Oitava Maravilha e Recompensa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Sullivan & Alanis">
+<meta property="og:image" content="assets/capa-oitava-maravilha.jpg">
+<link rel="icon" href="assets/capa-oitava-maravilha.jpg">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label"></span></span></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#topo" aria-label="Sullivan &amp; Alanis, voltar ao topo"><span class="logo-mask"></span></a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#sessao">Sessão</a>
+      <a href="#dupla">A dupla</a>
+      <a href="#musicas">Músicas</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#clipes">Clipes</a>
+    </nav>
+    <a class="btn btn--gold btn--sm nav__cta magnetic" href="#shows">Contratar show</a>
+    <button class="nav__burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="#sessao"><small>01</small>Sessão</a>
+    <a href="#dupla"><small>02</small>A dupla</a>
+    <a href="#musicas"><small>03</small>Músicas</a>
+    <a href="#trajetoria"><small>04</small>Trajetória</a>
+    <a href="#clipes"><small>05</small>Clipes</a>
+    <a href="#shows"><small>06</small>Shows</a>
+  </nav>
+  <a class="menu__ig" href="https://www.instagram.com/sullivanealanis/" target="_blank" rel="noopener">@sullivanealanis</a>
+</div>
+
+<main id="topo">
+
+  <!-- HERO: logo vazado sobre o vídeo do pinheiral; ao rolar, mergulha numa letra -->
+  <section class="hero" id="hero" aria-label="Abertura">
+    <div class="hero__stage">
+      <video class="hero__bg vsync" src="assets/pinheiral.mp4" poster="assets/poster-pinheiral.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+      <div class="hero__shade"></div>
+      <div class="hero__mask" id="heroMask">
+        <video class="hero__fg vsync" id="heroVideo" src="assets/pinheiral.mp4" poster="assets/poster-pinheiral.jpg" autoplay muted loop playsinline preload="auto" aria-label="Sullivan e Alanis cantando com violão no meio de um pinheiral"></video>
+      </div>
+      <div class="hero__sweep" aria-hidden="true"></div>
+
+      <div class="hero__top">
+        <p class="eyebrow"><span class="dot"></span>Sertanejo universitário · Agronejo</p>
+        <p class="eyebrow eyebrow--right">Colombo, PR · Curitiba e região</p>
+      </div>
+
+      <h1 class="sr-only">Sullivan &amp; Alanis</h1>
+
+      <div class="hero__bottom" id="heroBottom">
+        <p class="hero__claim">A nova dupla <em>sensação</em> de Curitiba.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--gold magnetic" href="#musicas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Ouvir Oitava Maravilha
+          </a>
+          <a class="btn btn--ghost magnetic" href="#shows">Chamar pro seu evento</a>
+        </div>
+      </div>
+
+      <button class="sound" id="heroSound" type="button" aria-pressed="false" data-cursor="som">
+        <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="sound__txt">Ligar som</span>
+      </button>
+      <div class="hero__cue" aria-hidden="true"><span>Role pra entrar no pinheiral</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- SESSÃO ACÚSTICA -->
+  <section class="sessao" id="sessao">
+    <div class="wrap sessao__grid">
+      <div class="sessao__text">
+        <p class="eyebrow"><span class="dot"></span>Sessão acústica</p>
+        <h2 class="h2 reveal">Duas vozes, <em>um violão</em> e o pinheiral.</h2>
+        <p class="lead reveal">Tudo começou cantando juntos nas festas de família e no karaokê. Quando o Sullivan pegou o violão, a dupla ganhou um som que é só deles: a voz da Alanis na frente, o violão segurando o tempo e o refrão aberto pra todo mundo cantar.</p>
+        <ul class="facts reveal">
+          <li><span>Formação</span>Alanis na voz, Sullivan na voz e no violão</li>
+          <li><span>No palco</span>Ao vivo com banda completa</li>
+          <li><span>De onde</span>Colombo, Paraná</li>
+        </ul>
+      </div>
+      <figure class="phone tilt" data-cursor="som">
+        <video class="phone__video" id="sessaoVideo" src="assets/pinheiral.mp4" poster="assets/poster-pinheiral.jpg" muted loop playsinline preload="metadata" aria-label="Sessão acústica de Sullivan e Alanis"></video>
+        <button class="phone__sound" type="button" data-video="sessaoVideo" aria-pressed="false">
+          <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl">Ouvir com som</span>
+        </button>
+        <figcaption>Ao vivo, sem corte</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marquee">
+      <span>Oitava Maravilha</span><b>✦</b><span class="o">Recompensa</span><b>✦</b><span>Ao vivo com banda</span><b>✦</b><span class="o">Agronejo</span><b>✦</b><span>Sertanejo universitário</span><b>✦</b>
+      <span>Oitava Maravilha</span><b>✦</b><span class="o">Recompensa</span><b>✦</b><span>Ao vivo com banda</span><b>✦</b><span class="o">Agronejo</span><b>✦</b><span>Sertanejo universitário</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- A DUPLA -->
+  <section class="dupla" id="dupla">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow"><span class="dot"></span>A dupla</p>
+        <h2 class="h2 reveal">Irmãos de sangue. <em>Dupla de palco.</em></h2>
+      </header>
+
+      <div class="duo">
+        <article class="member tilt">
+          <div class="member__img"><img src="assets/alanis.jpg" alt="Alanis de chapéu e jaqueta preta" loading="lazy"></div>
+          <div class="member__body">
+            <h3 class="member__name">Alanis</h3>
+            <dl>
+              <div><dt>Na dupla</dt><dd>Voz</dd></div>
+              <div><dt>O nome vem de</dt><dd>Alanis Morissette</dd></div>
+              <div><dt>Referência de palco</dt><dd>Ana Castela</dd></div>
+            </dl>
+          </div>
+        </article>
+        <span class="duo__amp" aria-hidden="true">&amp;</span>
+        <article class="member member--alt tilt">
+          <div class="member__img"><img src="assets/sullivan.jpg" alt="Sullivan de camisa preta" loading="lazy"></div>
+          <div class="member__body">
+            <h3 class="member__name">Sullivan</h3>
+            <dl>
+              <div><dt>Na dupla</dt><dd>Voz e violão</dd></div>
+              <div><dt>O nome vem de</dt><dd>Um personagem de Tom Hanks</dd></div>
+              <div><dt>Referência de palco</dt><dd>Gusttavo Lima</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong data-count="3">3</strong><span>anos de dupla</span></div>
+        <div class="stat"><strong data-count="2">2</strong><span>músicas gravadas em estúdio</span></div>
+        <div class="stat"><strong data-count="2">2</strong><span>clipes em novembro de 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÚSICAS -->
+  <section class="musicas" id="musicas">
+    <div class="wrap musicas__grid">
+      <div class="musicas__media">
+        <figure class="phone phone--warm tilt" data-cursor="som">
+          <video class="phone__video" id="omVideo" src="assets/oitava-maravilha.mp4" poster="assets/poster-oitava.jpg" muted loop playsinline preload="metadata" aria-label="Sullivan e Alanis dançando a coreografia de Oitava Maravilha"></video>
+          <button class="phone__sound" type="button" data-video="omVideo" aria-pressed="false">
+            <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl">Ouvir com som</span>
+          </button>
+          <figcaption>A dancinha de Oitava Maravilha</figcaption>
+        </figure>
+        <img class="cover" src="assets/capa-oitava-maravilha.jpg" alt="Capa de Recompensa, lançamento com Oitava Maravilha" loading="lazy">
+      </div>
+
+      <div class="musicas__list">
+        <p class="eyebrow"><span class="dot"></span>Músicas</p>
+        <h2 class="h2 reveal">Refrão pra cantar junto <em>e dançar.</em></h2>
+
+        <ol class="tracks">
+          <li class="track">
+            <span class="track__n">01</span>
+            <div class="track__main">
+              <h3>Oitava Maravilha</h3>
+              <p><span class="tag">Agronejo</span><span class="tag">Refrão de dancinha</span><span class="tag tag--hot">Clipe em novembro</span></p>
+            </div>
+            <span class="track__time">2:11</span>
+            <button class="track__play" type="button" data-video="omVideo" aria-label="Tocar trecho de Oitava Maravilha">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </li>
+          <li class="track">
+            <span class="track__n">02</span>
+            <div class="track__main">
+              <h3>Recompensa</h3>
+              <p><span class="tag">Sertanejo universitário</span><span class="tag tag--hot">Clipe em novembro</span></p>
+            </div>
+            <span class="track__time">2:03</span>
+            <a class="track__play" href="https://open.spotify.com/search/Sullivan%20e%20Alanis%20Recompensa" target="_blank" rel="noopener" aria-label="Procurar Recompensa no Spotify">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </a>
+          </li>
+        </ol>
+
+        <p class="platforms__label">Disponível em todas as plataformas</p>
+        <div class="platforms">
+          <a href="https://open.spotify.com/search/Sullivan%20e%20Alanis" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://music.youtube.com/search?q=Sullivan+e+Alanis" target="_blank" rel="noopener">YouTube Music</a>
+          <a href="https://music.apple.com/br/search?term=Sullivan%20e%20Alanis" target="_blank" rel="noopener">Apple Music</a>
+          <a href="https://www.deezer.com/search/Sullivan%20e%20Alanis" target="_blank" rel="noopener">Deezer</a>
+          <a href="https://music.amazon.com.br/search/Sullivan%20e%20Alanis" target="_blank" rel="noopener">Amazon Music</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAJETÓRIA: rolagem horizontal -->
+  <section class="trajetoria" id="trajetoria">
+    <div class="trajetoria__pin">
+      <header class="wrap sec-head sec-head--row">
+        <div>
+          <p class="eyebrow"><span class="dot"></span>Trajetória</p>
+          <h2 class="h2">Da festa de família <em>pro palco.</em></h2>
+        </div>
+        <div class="progress" aria-hidden="true"><i id="trajBar"></i></div>
+      </header>
+      <div class="rail" id="rail">
+        <article class="step">
+          <span class="step__when">2023</span>
+          <h3>Festas de família e karaokê</h3>
+          <p>Os irmãos começam a cantar juntos, do jeito mais sertanejo que existe: em volta da mesa, com todo mundo fazendo coro.</p>
+        </article>
+        <article class="step">
+          <span class="step__when">Depois</span>
+          <h3>O violão do Sullivan</h3>
+          <p>Sullivan aprende a tocar violão e a dupla ganha um som próprio, sem depender de playback.</p>
+        </article>
+        <article class="step">
+          <span class="step__when">Em seguida</span>
+          <h3>Banda ao vivo</h3>
+          <p>A dupla começa a se apresentar com banda completa, preparada pra segurar a festa do começo ao fim.</p>
+        </article>
+        <article class="step">
+          <span class="step__when">Recentemente</span>
+          <h3>Primeiras gravações</h3>
+          <p>Oitava Maravilha e Recompensa são gravadas em estúdio e chegam a todas as plataformas.</p>
+        </article>
+        <article class="step step--next">
+          <span class="step__when">Nov · 2026</span>
+          <h3>Os clipes</h3>
+          <p>Dois clipes, com roteiro do Zé, da dupla Rosa e Rosinha.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIPES -->
+  <section class="clipes" id="clipes">
+    <div class="filmstrip" aria-hidden="true">
+      <div class="filmstrip__track" id="film">
+        <img src="assets/poster-pinheiral.jpg" alt=""><img src="assets/poster-oitava.jpg" alt=""><img src="assets/alanis.jpg" alt=""><img src="assets/capa-oitava-maravilha.jpg" alt=""><img src="assets/sullivan.jpg" alt="">
+        <img src="assets/poster-pinheiral.jpg" alt=""><img src="assets/poster-oitava.jpg" alt=""><img src="assets/alanis.jpg" alt=""><img src="assets/capa-oitava-maravilha.jpg" alt=""><img src="assets/sullivan.jpg" alt="">
+      </div>
+    </div>
+    <div class="wrap clipes__inner">
+      <p class="eyebrow"><span class="dot dot--rec"></span>Em produção</p>
+      <h2 class="clipes__title reveal">Dois clipes.<br><em>Novembro de 2026.</em></h2>
+      <p class="lead reveal">Oitava Maravilha e Recompensa ganham clipe, com roteiro assinado pelo Zé, da dupla Rosa e Rosinha. Quem segue a dupla vê primeiro.</p>
+      <a class="btn btn--ghost magnetic" href="https://www.instagram.com/sullivanealanis/" target="_blank" rel="noopener">Seguir @sullivanealanis</a>
+    </div>
+  </section>
+
+  <!-- SHOWS -->
+  <section class="shows" id="shows">
+    <div class="wrap shows__grid">
+      <div class="shows__pitch">
+        <p class="eyebrow"><span class="dot"></span>Shows</p>
+        <h2 class="h2 reveal">Leve a dupla <em>pro seu palco.</em></h2>
+        <ul class="pitch">
+          <li><b>Química de irmãos</b>Dois que cresceram cantando juntos e se entendem no olhar.</li>
+          <li><b>Banda completa ao vivo</b>Som cheio, do rodeio ao casamento.</li>
+          <li><b>Refrão que gruda</b>E uma dancinha que a casa inteira aprende.</li>
+        </ul>
+        <p class="shows__base">Base em Colombo, PR. Atende Curitiba e região.</p>
+      </div>
+
+      <form class="booking" id="booking" novalidate>
+        <div class="booking__head">
+          <span class="booking__stamp">Pedido de show</span>
+          <span class="booking__no" id="ticketNo">Nº 0001</span>
+        </div>
+
+        <div class="field">
+          <label for="f-evento">Nome do evento</label>
+          <input id="f-evento" name="evento" type="text" placeholder="Ex.: Festa do Peão de Colombo" autocomplete="off">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-cidade">Cidade</label>
+            <input id="f-cidade" name="cidade" type="text" placeholder="Ex.: Curitiba, PR" autocomplete="address-level2">
+          </div>
+          <div class="field">
+            <label for="f-data">Data</label>
+            <input id="f-data" name="data" type="text" placeholder="A combinar" autocomplete="off">
+          </div>
+        </div>
+        <fieldset class="field">
+          <legend>Tipo de evento</legend>
+          <div class="chips" id="chips">
+            <label><input type="radio" name="tipo" id="t-rodeio" value="rodeio"><span>Rodeio</span></label>
+            <label><input type="radio" name="tipo" id="t-festa" value="festa"><span>Festa</span></label>
+            <label><input type="radio" name="tipo" id="t-casamento" value="casamento"><span>Casamento</span></label>
+            <label><input type="radio" name="tipo" id="t-bar" value="bar ou casa de show"><span>Bar / casa de show</span></label>
+            <label><input type="radio" name="tipo" id="t-formatura" value="formatura"><span>Formatura</span></label>
+            <label><input type="radio" name="tipo" id="t-outro" value="outro tipo de evento"><span>Outro</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="f-nome">Seu nome</label>
+          <input id="f-nome" name="nome" type="text" placeholder="Quem está organizando" autocomplete="name">
+        </div>
+
+        <div class="preview">
+          <span class="preview__lbl">Sua mensagem</span>
+          <p id="msg"></p>
+        </div>
+
+        <div class="booking__actions">
+          <button class="btn btn--gold" type="submit" id="copyBtn">Copiar mensagem</button>
+          <a class="btn btn--ghost" id="waBtn" href="#" target="_blank" rel="noopener" hidden>Enviar no WhatsApp</a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/sullivanealanis/" target="_blank" rel="noopener">Abrir o Direct</a>
+        </div>
+        <p class="booking__note" id="copyNote" role="status">Copie a mensagem e mande no Direct do <b>@sullivanealanis</b>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__logo" role="img" aria-label="Sullivan &amp; Alanis"></div>
+    <div class="footer__row">
+      <a class="footer__ig" href="https://www.instagram.com/sullivanealanis/" target="_blank" rel="noopener">Instagram · @sullivanealanis</a>
+      <span>Colombo, PR · Curitiba e região</span>
+      <span>© 2026 Sullivan &amp; Alanis</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
