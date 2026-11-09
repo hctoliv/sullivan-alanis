@@ -13,6 +13,7 @@
   ['gesturestart', 'gesturechange', 'gestureend'].forEach((ev) =>
     document.addEventListener(ev, (e) => e.preventDefault(), { passive: false }));
   document.addEventListener('touchmove', (e) => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+  document.addEventListener('dblclick', (e) => e.preventDefault(), { passive: false });
 
   if (motion) {
     root.classList.add('js-motion');
