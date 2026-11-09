@@ -78,7 +78,7 @@
       navLinks.forEach((l) => l.classList.toggle('is-active', l.getAttribute('href') === '#' + en.target.id));
     });
   }, { rootMargin: '-45% 0px -50% 0px' });
-  ['sessao', 'dupla', 'musicas', 'trajetoria', 'clipes', 'shows'].forEach((id) => {
+  ['sessao', 'dupla', 'musicas', 'trajetoria', 'reels', 'clipes', 'shows'].forEach((id) => {
     const el = document.getElementById(id); if (el) sectionIO.observe(el);
   });
 

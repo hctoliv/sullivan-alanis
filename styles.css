@@ -387,6 +387,18 @@ a { color: inherit; }
 .js-motion.is-wide .step { flex-basis: 440px; min-height: 420px; }
 
 /* ---------- clipes ---------- */
+/* ---------- reels ---------- */
+.reels { padding-block: clamp(90px, 13vw, 180px); }
+.reels__grid { display: grid; grid-auto-flow: column; grid-auto-columns: min(72vw, 300px); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); }
+.reels__grid::-webkit-scrollbar { display: none; }
+@media (min-width: 900px) { .reels__grid { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); overflow: visible; margin-inline: 0; padding-inline: 0; gap: clamp(16px, 2vw, 28px); } }
+.reel { position: relative; display: block; aspect-ratio: 9 / 16; border-radius: 22px; overflow: hidden; background: var(--bark-2); scroll-snap-align: start; box-shadow: 0 0 0 1px var(--line); color: var(--cream); text-decoration: none; isolation: isolate; }
+.reel video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.reel:hover video { transform: scale(1.05); }
+.reel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(13, 10, 7, .85), rgba(13, 10, 7, 0) 45%); z-index: 1; }
+.reel__tag { position: absolute; left: 14px; top: 14px; z-index: 2; padding: 8px 12px; border-radius: 999px; background: rgba(13, 10, 7, .55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); font: 400 11px/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; }
+.reel__txt { position: absolute; left: 18px; right: 18px; bottom: 18px; z-index: 2; font-weight: 800; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.1; }
+
 .clipes { position: relative; padding-block: clamp(110px, 15vw, 220px); overflow: hidden; text-align: center; }
 .filmstrip { position: absolute; inset: 50% 0 auto; transform: translateY(-50%) rotate(-6deg) scale(1.15); opacity: .22; pointer-events: none; }
 .filmstrip__track { display: flex; gap: 14px; width: max-content; padding: 18px 0; border-block: 10px dashed rgba(243, 232, 212, .35); }
