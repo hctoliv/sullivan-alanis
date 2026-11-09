@@ -1,7 +1,4 @@
-/* Sullivan & Alanis — interações do site
-   Configure aqui o WhatsApp da dupla (só números, com DDI e DDD, ex.: '5541999999999').
-   Vazio = o botão "Enviar no WhatsApp" fica escondido. */
-const WHATSAPP = '';
+/* Sullivan & Alanis — interações do site. Contato só pelo Direct do Instagram. */
 
 (() => {
   const $ = (s, c = document) => c.querySelector(s);
@@ -310,7 +307,6 @@ const WHATSAPP = '';
   const form = $('#booking');
   const msgEl = $('#msg');
   const note = $('#copyNote');
-  const wa = $('#waBtn');
   $('#ticketNo').textContent = 'Nº ' + String(Math.floor(1000 + Math.random() * 9000));
   const tipos = {
     rodeio: 'um rodeio', festa: 'uma festa', casamento: 'um casamento',
@@ -338,14 +334,8 @@ const WHATSAPP = '';
   const render = () => {
     const m = buildMsg();
     msgEl.textContent = m;
-    if (WHATSAPP) {
-      wa.hidden = false;
-      wa.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`;
-    }
     note.classList.remove('is-ok');
-    note.innerHTML = WHATSAPP
-      ? 'Envie direto no WhatsApp ou copie e mande no Direct do <b>@sullivanealanis</b>.'
-      : 'Copie a mensagem e mande no Direct do <b>@sullivanealanis</b>.';
+    note.innerHTML = 'Copie a mensagem e mande no Direct do <b>@sullivanealanis</b>.';
   };
   form.addEventListener('input', render);
   form.addEventListener('change', render);
